@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maheshdemo
+  labels:
+    app: maheshdemo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: maheshdemo
+  template:
+    metadata:
+      labels:
+        app: maheshdemo
+    spec:
+      containers:
+      - name: maheshdemo
+        image: 209479269284.dkr.ecr.ap-south-1.amazonaws.com/demo/mahesh:25
+        ports:
+        - containerPort: 8080
+
