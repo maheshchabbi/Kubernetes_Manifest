@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: maheshdemo
-        image: 209479269284.dkr.ecr.ap-south-1.amazonaws.com/demo/mahesh:${UPSTREAM_TAG}
+        image: 209479269284.dkr.ecr.ap-south-1.amazonaws.com/demo/mahesh:${params.UPSTREAM_TAG}
         ports:
         - containerPort: 8080
 
